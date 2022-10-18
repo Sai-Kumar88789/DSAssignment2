@@ -1,0 +1,9 @@
+version: '3'
+services:
+  core_api:
+    build: .
+    container_names: "fastapi-app"
+    ports:
+      - "8000:15400"
+    volumes:
+      - ./app
